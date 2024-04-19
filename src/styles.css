@@ -49,6 +49,7 @@ form {
   border-radius: 50px;
   line-height: 20px;
   color: #272044;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .button {

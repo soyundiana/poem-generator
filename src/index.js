@@ -17,6 +17,9 @@ function generatePoem(event) {
     let context = "You are a very intellegent AI that likes puns in Estonian poems. Please generate a 4 line poem in basic HTML and separate each line with a <br />. Make each line height 2. Do not exceed line height limit. Do not include title to the poem.";
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+    let poemElement = document.querySelector("#poem");
+    poemElement.classList.remove("hidden");
+    poemElement.innerHTML = `Generating 🇪🇪 Estonian poem about <span class="loading">${requestInput.value}</span>`
     axios.get(apiURL).then(displayPoem);
 
 }

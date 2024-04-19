@@ -60,6 +60,7 @@ form {
   border: none;
   width: 120px;
   padding: 14px 24px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .poem {
